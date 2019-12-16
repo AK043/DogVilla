@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "UserLogin";
+}
+
+
+
+<div class="main">
+    <div class="top-box">
+        <div class="wrap">
+            <div class="content-top">
+               
+                <div class="contact-right">
+                    <h2>Admin Login </h2>
+                    <div class="contact-form">
+                        <form method="POST" action="Login">
+                            <input id="Name" type="text" name="Name" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+
+                          
+                            <input type="text" id="Password" name="Password"  class="textbox" value="Password:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+
+
+                            <input type="submit" value="Sign In" />
+
+
+
+
+
+                            <h1 id="rslt" runat="server"></h1>
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+

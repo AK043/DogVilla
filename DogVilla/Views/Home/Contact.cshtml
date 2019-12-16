@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+
+
+
+<div class="main">
+    <div class="top-box">
+        <div class="wrap">
+            <div class="content-top">
+                <div class="contact-left">
+                    <h2>location</h2>
+                    <p>Follow Us</p>
+                    <div class="contact-left-grid">
+                        <div class="contact-left-grid-pic">
+                            <img src="~/images/fb.png" title="facebook">
+                        </div>
+                        <div class="contact-left-grid-info">
+                            <h5>www.facebook.com</h5>
+
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="contact-left-grid">
+                        <div class="contact-left-grid-pic">
+                            <img src="~/images/tw.png" title="twitter">
+                        </div>
+                        <div class="contact-left-grid-info">
+                            <h5>www.twitter.com</h5>
+
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="contact-left-grid">
+                        <div class="contact-left-grid-pic">
+                            <img src="~/images/rss.png" title="rss">
+                        </div>
+                        <div class="contact-left-grid-info">
+                            <h5>www.rss.com</h5>
+
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+
+                </div>
+                <div class="contact-right">
+                    <h2>Get in Touch</h2>
+                    <div class="contact-form">
+                        <form method="POST" action="VisitorMessage">
+                            <input id="txtName" type="text" name="txtName" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+
+                           <input id="txtEmail"  name="txtEmail" type="text"  class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+
+                            <input type="text" id="txtMsg" name="txtMsg"  style="height:150px;"  class="textbox" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+
+                            
+                            <input type="submit" value="Send Query "/>
+
+
+                            
+
+
+                            <h1 id="rslt" runat="server"></h1>
+                        </form>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
